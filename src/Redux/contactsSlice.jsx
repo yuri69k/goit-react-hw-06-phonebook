@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+import shortid from 'shortid';
 import { INITIAL_CONTACTS } from '../data/contacts';
 
 const contactsSlice = createSlice({
@@ -10,6 +10,15 @@ const contactsSlice = createSlice({
     addContacts: {
       reducer(state, action) {
         state.push(action.payload);
+      },
+      prepare(name, number) {
+        return {
+          payload: {
+            id: shortid.generate(),
+            name: name,
+            number: number,
+          },
+        };
       },
     },
        deleteContact: {
