@@ -10,6 +10,7 @@
   color: blue;
   display: flex;
   gap: 44px;
+  align-items: center;
 }
 .contactName {
   font-weight: 500;
