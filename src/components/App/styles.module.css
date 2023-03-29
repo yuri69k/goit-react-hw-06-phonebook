@@ -4,12 +4,7 @@
   align-items: center;
 }
 
-.wrapper h1 {
-  display: flex;
-  margin: 10px 0;
 
-  align-items: center;
-}
 
 .wrapper h2 {
   display: flex;
@@ -18,9 +13,7 @@
   align-items: center;
 }
 
-.icon {
-  margin-left: 10px;
-}
+
 
 input {
   display: block;

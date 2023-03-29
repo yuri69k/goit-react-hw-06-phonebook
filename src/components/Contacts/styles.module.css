@@ -7,10 +7,11 @@
 .phoneNumber {
   margin-left: auto;
   font-weight: 400;
-  color: blue;
+  color: #0d53e8;
   display: flex;
-  gap: 44px;
+  gap: 10px;
   align-items: center;
+  opacity: 0.8;
 }
 .contactName {
   font-weight: 500;
@@ -19,11 +20,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 400px;
+  width: 400px;
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
-  gap: 20px;
+  gap: 15px;
   background-color: rgb(248, 248, 248);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
@@ -46,7 +47,7 @@
   top: 2px;
   opacity: 0.5;
 }
-.telephone_icon:hover {
+.telephone_icon,.phoneNumber:hover {
   opacity: 1;
 }
 
